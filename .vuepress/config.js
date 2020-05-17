@@ -1,53 +1,64 @@
 module.exports = {
-    title: 'EPEC Grandes Clientes',
-    description: 'Epec Grandes clientes',
+    title: 'AAR - DOCUMENTACIÓN',
+    description: 'Documentación',
     themeConfig: {
       nav: [
         { text: 'Inicio', link: '/' },
-        { text: 'Jira', link: 'https://jira.ascentio.com.ar/secure/RapidBoard.jspa?rapidView=90&view=detail' },
-        { text: 'Gitlab', link: 'https://gitlab.ascentio.com.ar/teleco/epec' },
-        { text: 'Jenkins', link: 'https://traduccionesitaliano.files.wordpress.com/2016/04/work-in-progress.png?w=487' }
+        { text: 'Demo', link: 'http://167.99.51.107:8080/login' },
+        { text: 'Github', link: 'https://github.com/ggiuliodori/afiliadosAltoRiesgo-doc' },
       ],
       sidebar:[
         ['/', 'Inicio'],
-        ['/docs/arquitectura', 'Arquitectura'],
+        ['/docs/inicio/flujos_negocio', 'Flujos de Negocio'],
         {
-          title: 'Decisiones',
+          title: 'Funcionalidades',
           children: [ 
-            ['/docs/decisiones/adr0001.md', 'ADR0001'],
-            ['/docs/decisiones/adr0002.md', 'ADR0002'],
-            ['/docs/decisiones/adr0003.md', 'ADR0003'],
-            ['/docs/decisiones/adr0004.md', 'ADR0004']
+            ['/docs/funcionalidades/adr0001.md', 'ADR0001'],
+            ['/docs/funcionalidades/adr0002.md', 'ADR0002'],
+            ['/docs/funcionalidades/adr0003.md', 'ADR0003'],
+            ['/docs/funcionalidades/adr0004.md', 'ADR0004']
            ]
         },
         {
-          title: 'Estimaciones',
+          title: 'Módulos',
           children: [ 
-            ['/docs/estimaciones/est0001.md', 'EST0001'],
-            ['/docs/estimaciones/est0002.md', 'EST0002']
+            ['/docs/modulos/est0001.md', 'EST0001'],
+            ['/docs/modulos/est0002.md', 'EST0002']
            ]
         },
         {
-          title: 'Reuniones',
+          title: 'Incompatibilidades',
           children: [ 
-            ['/docs/reuniones/reu0001.md', 'REU0001'],
-            ['/docs/reuniones/reu0002.md', 'REU0002'],
-            ['/docs/reuniones/reu0003.md', 'REU0003'],
-            ['/docs/reuniones/reu0004.md', 'REU0004']
+            ['/docs/incompatibilidades/reu0001.md', 'REU0001'],
+            ['/docs/incompatibilidades/reu0002.md', 'REU0002'],
+            ['/docs/incompatibilidades/reu0003.md', 'REU0003'],
+            ['/docs/incompatibilidades/reu0004.md', 'REU0004']
            ]
         },
         {
-          title: 'Medidores',
+          title: 'Configuración',
           children: [ 
-            ['/docs/hexing.md', 'Hexing'],
-            ['/docs/itron.md', 'Itron'],
-            ['/docs/circutor.md', 'Circutor']
+            ['/docs/config/hexing.md', 'Hexing'],
+            ['/docs/config/itron.md', 'Itron'],
+            ['/docs/config/circutor.md', 'Circutor']
            ]
         },
         {
-          title: 'Indicadores',
+          title: 'Scheduler',
           children: [ 
-            ['/docs/indicadores/ntm.md', 'NTM']
+            ['/docs/schedul/ntm.md', 'NTM']
+           ]
+        },
+        {
+          title: 'Tags',
+          children: [ 
+            ['/docs/tags/ntm.md', 'NTM']
+           ]
+        },
+        {
+          title: 'Arquitectura',
+          children: [ 
+            ['/docs/arquitectura/ntm.md', 'NTM']
            ]
         }
       ]
